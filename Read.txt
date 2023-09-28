@@ -1,0 +1,13 @@
+## wajib!, biar gak bentrok
+
+1. langkah - langkah copy file:
+A. copy paste code html, css. Sesuai role masing-masing
+
+
+2. bagian:
+A. ibra: login
+B. pandu: profile
+C. ijlal: calculator
+D. raffly: UI/UX
+E. dedix: Data Sccience
+
