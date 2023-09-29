@@ -1,26 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>result</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Mauhealthy - Selamat Datang</title>
 
-    <!-- style -->
-    <link rel="stylesheet" href="./style/result.css" />
-  </head>
-  <body>
-    <!-- navbar -->
-    <div id="navbar">
-      <img src="" alt="" />
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  
+  <!-- css -->
+  <link rel="stylesheet" href="style/result.css">
+
+</head>
+<body>
+  <!-- navbar -->
+  <div id="navbar">
+    <div class="header" id="navbar-position">
+      <div class="logo">
+        <img src="img/logo.png" alt="Mauhealthy">
+      </div>
+      <div class="logo-txt">
+        <h1>Mauhealthy</h1>
+      </div>
     </div>
-    <!-- profile -->
-    <section id="profile">
-      <h1>profile</h1>
-    </section>
-    <!-- kalkulator -->
-    <section id="kalkulator">
-      <h1>kalkulator</h1>
-    </section>
-  </body>
+  </div>
+
+  <!-- profile -->
+  <section id="profile">
+    <div class="container">
+      <div class="container-content">
+        <div class="card">
+          <h2 id="card-daytime">Selamat Pagi,</h2>
+          <h2 id="card-name">Dwiky Pandu Aqri</h2>
+          <table>
+            <tr>
+              <td>Panggilan</td>
+              <td class="split">:</td>
+              <td id="form-name">Test</td>
+            </tr>
+            <tr>
+              <td>Usia</td>
+              <td class="split">:</td>
+              <td id="form-age">Test</td>
+            </tr>
+            <tr>
+              <td>Gender</td>
+              <td class="split">:</td>
+              <td id="form-gender">Test</td>
+            </tr>
+            <tr>
+              <td>Tinggi</td>
+              <td class="split">:</td>
+              <td id="form-height">Test</td>
+            </tr>
+            <tr>
+              <td>Berat</td>
+              <td class="split">:</td>
+              <td id="form-weight">Test</td>
+            </tr>
+          </table>
+          <a href="#calculator" onclick="scrollCalculator()"><button>Hitung Kalori</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- calculator -->
+  <section id="calculator" style="display: none;">
+    <div id="cover">
+      <div class="left">
+        <div class="top">
+          <div class="topic">
+            <h3 id="username">Hi, Rafly</h3>
+            <h3 id="title">Hitung kalori makanan kamu disini</h3>
+          </div>
+          <div class="tambah">
+            <button id="tambah">tambah</button>
+            <button id="reset">reset</button>
+          </div>
+        </div>
+        <div id="tamMakan"></div>
+      </div>
+      <div class="right">
+        <div class="atas">
+          <h1 id="showTokal">Total kalori: <span id="ToKal">0</span> Kalori</h1>
+          <h1 id="showSisakal">Sisa kal: <span id="sisaKal"></span> Kalori</h1>
+        </div>
+        <div id="bawah"></div>
+      </div>
+    </div>
+  </section>
+</body>
+
+<!-- script -->
+<script src="script/result.js"></script>
+<script type="module" src="script/app.js"></script>
 </html>
